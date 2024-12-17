@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMV4D6YDXT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+
+      gtag('js', new Date());
+      gtag('config', 'G-DMV4D6YDXT', {'allow_google_signals': false, 'cookie_expires': 0});
+    </script>
+
+    {% seo title=false %}
+    <title>Sam Yeom</title>
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Sam Yeom</h1>
+
+        {% if site.logo %}
+          <img src="{{site.logo | relative_url}}" alt="Logo" />
+        {% endif %}
+
+        <p>
+            I finished my PhD in Computer Science at CMU, where I was advised by <a href="https://www.cs.cmu.edu/~mfredrik/">Matt Fredrikson</a>.
+            My research was on privacy and fairness issues in machine learning.
+            Prior to that, I studied math and computer science at MIT.
+        </p>
+
+        <p>My last name is pronounced like the word "yum" (IPA: [j&#652;m]).</p>
+
+        <table>
+          <tr>
+            <td><i class="fas fa-envelope fa-2x"></i></td> <td>syeom [at] cs.cmu.edu</td>
+          </tr>
+          <tr>
+            <td><i class="fab fa-github fa-2x"></i></td> <td><a href="https://github.com/sam-yeom">sam-yeom</a></td>
+          </tr>
+        </table>
+
+        <p><a href="CV.pdf">View my CV</a></p>
+
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>
